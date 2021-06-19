@@ -6,7 +6,6 @@ C:\Users\rodri\Documents\GitHub\ControleBiblioteca\bin\Debug\net5.0-windows\Cont
 C:\Users\rodri\Documents\GitHub\ControleBiblioteca\bin\Debug\net5.0-windows\ref\ControleBiblioteca.dll
 C:\Users\rodri\Documents\GitHub\ControleBiblioteca\bin\Debug\net5.0-windows\ControleBiblioteca.pdb
 C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.csproj.AssemblyReference.cache
-C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.Form1.resources
 C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.csproj.GenerateResource.cache
 C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.AssemblyInfoInputs.cache
@@ -17,3 +16,4 @@ C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ref\
 C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.pdb
 C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.genruntimeconfig.cache
 C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.Properties.Resources.resources
+C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.FormControle.resources
