@@ -1,6 +1,6 @@
 ﻿
 namespace ControleBiblioteca {
-    partial class Form1 {
+    partial class FormControle {
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -26,7 +26,12 @@ namespace ControleBiblioteca {
         private void InitializeComponent() {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabInicio = new System.Windows.Forms.TabPage();
+            this.tabPessoasCadastradas = new System.Windows.Forms.TabPage();
+            this.btnNovoPessoa = new System.Windows.Forms.Button();
+            this.dgvPessoas = new System.Windows.Forms.DataGridView();
+            this.label23 = new System.Windows.Forms.Label();
             this.tabPessoas = new System.Windows.Forms.TabPage();
+            this.txtDataNasc = new System.Windows.Forms.DateTimePicker();
             this.btnCancelarCP = new System.Windows.Forms.Button();
             this.btnSalvarPessoa = new System.Windows.Forms.Button();
             this.txtCidade = new System.Windows.Forms.TextBox();
@@ -41,7 +46,6 @@ namespace ControleBiblioteca {
             this.label7 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtTelefone = new System.Windows.Forms.TextBox();
-            this.txtDtnasc = new System.Windows.Forms.TextBox();
             this.txtCpf = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,12 +54,14 @@ namespace ControleBiblioteca {
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabPessoasCadastradas = new System.Windows.Forms.TabPage();
-            this.label23 = new System.Windows.Forms.Label();
+            this.tabLivrosCadastrados = new System.Windows.Forms.TabPage();
+            this.btnNovoLivro = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label24 = new System.Windows.Forms.Label();
             this.tabLivros = new System.Windows.Forms.TabPage();
+            this.txtDataEntrada = new System.Windows.Forms.DateTimePicker();
             this.btnCancelarCL = new System.Windows.Forms.Button();
             this.btnSalvarLivro = new System.Windows.Forms.Button();
-            this.txtDataEntrada = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtCategoria = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -64,52 +70,49 @@ namespace ControleBiblioteca {
             this.txtDescricaoLivro = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.tabLivrosCadastrados = new System.Windows.Forms.TabPage();
-            this.label24 = new System.Windows.Forms.Label();
+            this.tabAlugueisCadastrados = new System.Windows.Forms.TabPage();
+            this.btnNovoAluguel = new System.Windows.Forms.Button();
+            this.label25 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabAluguel = new System.Windows.Forms.TabPage();
+            this.txtDataSaida = new System.Windows.Forms.DateTimePicker();
+            this.txtDataRetorno = new System.Windows.Forms.DateTimePicker();
             this.btnSalvarAluguel = new System.Windows.Forms.Button();
             this.btnCancelarA = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.cmbLivroAlugado = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.cmbPessoa = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtValor = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.tabRanking = new System.Windows.Forms.TabPage();
-            this.dgvPessoas = new System.Windows.Forms.DataGridView();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label25 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
-            this.tabPessoas.SuspendLayout();
             this.tabPessoasCadastradas.SuspendLayout();
-            this.tabLivros.SuspendLayout();
-            this.tabLivrosCadastrados.SuspendLayout();
-            this.tabAluguel.SuspendLayout();
-            this.tabRanking.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPessoas)).BeginInit();
+            this.tabPessoas.SuspendLayout();
+            this.tabLivrosCadastrados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabLivros.SuspendLayout();
+            this.tabAlugueisCadastrados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabAluguel.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabInicio);
-            this.tabControl1.Controls.Add(this.tabPessoas);
             this.tabControl1.Controls.Add(this.tabPessoasCadastradas);
-            this.tabControl1.Controls.Add(this.tabLivros);
+            this.tabControl1.Controls.Add(this.tabPessoas);
             this.tabControl1.Controls.Add(this.tabLivrosCadastrados);
+            this.tabControl1.Controls.Add(this.tabLivros);
+            this.tabControl1.Controls.Add(this.tabAlugueisCadastrados);
             this.tabControl1.Controls.Add(this.tabAluguel);
-            this.tabControl1.Controls.Add(this.tabRanking);
             this.tabControl1.Location = new System.Drawing.Point(0, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(799, 349);
+            this.tabControl1.Size = new System.Drawing.Size(799, 409);
             this.tabControl1.TabIndex = 0;
             // 
             // tabInicio
@@ -117,13 +120,68 @@ namespace ControleBiblioteca {
             this.tabInicio.Location = new System.Drawing.Point(4, 24);
             this.tabInicio.Name = "tabInicio";
             this.tabInicio.Padding = new System.Windows.Forms.Padding(3);
-            this.tabInicio.Size = new System.Drawing.Size(791, 321);
+            this.tabInicio.Size = new System.Drawing.Size(791, 381);
             this.tabInicio.TabIndex = 0;
             this.tabInicio.Text = "Página Inicial";
             this.tabInicio.UseVisualStyleBackColor = true;
             // 
+            // tabPessoasCadastradas
+            // 
+            this.tabPessoasCadastradas.Controls.Add(this.btnNovoPessoa);
+            this.tabPessoasCadastradas.Controls.Add(this.dgvPessoas);
+            this.tabPessoasCadastradas.Controls.Add(this.label23);
+            this.tabPessoasCadastradas.Location = new System.Drawing.Point(4, 24);
+            this.tabPessoasCadastradas.Name = "tabPessoasCadastradas";
+            this.tabPessoasCadastradas.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPessoasCadastradas.Size = new System.Drawing.Size(791, 381);
+            this.tabPessoasCadastradas.TabIndex = 5;
+            this.tabPessoasCadastradas.Text = "Pessoas Cadastradas";
+            this.tabPessoasCadastradas.UseVisualStyleBackColor = true;
+            // 
+            // btnNovoPessoa
+            // 
+            this.btnNovoPessoa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNovoPessoa.BackColor = System.Drawing.Color.Transparent;
+            this.btnNovoPessoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNovoPessoa.ForeColor = System.Drawing.Color.Black;
+            this.btnNovoPessoa.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnNovoPessoa.Location = new System.Drawing.Point(3, 32);
+            this.btnNovoPessoa.Name = "btnNovoPessoa";
+            this.btnNovoPessoa.Size = new System.Drawing.Size(115, 38);
+            this.btnNovoPessoa.TabIndex = 30;
+            this.btnNovoPessoa.Text = "Novo";
+            this.btnNovoPessoa.UseCompatibleTextRendering = true;
+            this.btnNovoPessoa.UseVisualStyleBackColor = false;
+            this.btnNovoPessoa.Click += new System.EventHandler(this.btnNovoPessoa_Click);
+            // 
+            // dgvPessoas
+            // 
+            this.dgvPessoas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvPessoas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPessoas.Location = new System.Drawing.Point(3, 76);
+            this.dgvPessoas.Name = "dgvPessoas";
+            this.dgvPessoas.RowTemplate.Height = 25;
+            this.dgvPessoas.Size = new System.Drawing.Size(779, 299);
+            this.dgvPessoas.TabIndex = 2;
+            // 
+            // label23
+            // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label23.Location = new System.Drawing.Point(3, 3);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(210, 30);
+            this.label23.TabIndex = 1;
+            this.label23.Text = "Pessoas Cadastradas";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // tabPessoas
             // 
+            this.tabPessoas.Controls.Add(this.txtDataNasc);
             this.tabPessoas.Controls.Add(this.btnCancelarCP);
             this.tabPessoas.Controls.Add(this.btnSalvarPessoa);
             this.tabPessoas.Controls.Add(this.txtCidade);
@@ -138,7 +196,6 @@ namespace ControleBiblioteca {
             this.tabPessoas.Controls.Add(this.label7);
             this.tabPessoas.Controls.Add(this.txtEmail);
             this.tabPessoas.Controls.Add(this.txtTelefone);
-            this.tabPessoas.Controls.Add(this.txtDtnasc);
             this.tabPessoas.Controls.Add(this.txtCpf);
             this.tabPessoas.Controls.Add(this.txtNome);
             this.tabPessoas.Controls.Add(this.label6);
@@ -150,22 +207,34 @@ namespace ControleBiblioteca {
             this.tabPessoas.Location = new System.Drawing.Point(4, 24);
             this.tabPessoas.Name = "tabPessoas";
             this.tabPessoas.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPessoas.Size = new System.Drawing.Size(791, 321);
+            this.tabPessoas.Size = new System.Drawing.Size(791, 381);
             this.tabPessoas.TabIndex = 1;
             this.tabPessoas.Text = "Cadastro de Pessoas";
             this.tabPessoas.UseVisualStyleBackColor = true;
+            // 
+            // txtDataNasc
+            // 
+            this.txtDataNasc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDataNasc.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDataNasc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDataNasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDataNasc.Location = new System.Drawing.Point(176, 116);
+            this.txtDataNasc.Name = "txtDataNasc";
+            this.txtDataNasc.Size = new System.Drawing.Size(179, 29);
+            this.txtDataNasc.TabIndex = 23;
             // 
             // btnCancelarCP
             // 
             this.btnCancelarCP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelarCP.BackColor = System.Drawing.Color.Red;
+            this.btnCancelarCP.BackColor = System.Drawing.Color.Transparent;
             this.btnCancelarCP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancelarCP.ForeColor = System.Drawing.Color.Black;
             this.btnCancelarCP.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnCancelarCP.Location = new System.Drawing.Point(384, 207);
+            this.btnCancelarCP.Location = new System.Drawing.Point(623, 251);
             this.btnCancelarCP.Name = "btnCancelarCP";
-            this.btnCancelarCP.Size = new System.Drawing.Size(115, 47);
+            this.btnCancelarCP.Size = new System.Drawing.Size(115, 38);
             this.btnCancelarCP.TabIndex = 22;
             this.btnCancelarCP.Text = "Cancelar";
             this.btnCancelarCP.UseCompatibleTextRendering = true;
@@ -175,24 +244,25 @@ namespace ControleBiblioteca {
             // 
             this.btnSalvarPessoa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalvarPessoa.BackColor = System.Drawing.Color.LightGreen;
+            this.btnSalvarPessoa.BackColor = System.Drawing.Color.Transparent;
             this.btnSalvarPessoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSalvarPessoa.ForeColor = System.Drawing.Color.Black;
             this.btnSalvarPessoa.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSalvarPessoa.Location = new System.Drawing.Point(240, 207);
+            this.btnSalvarPessoa.Location = new System.Drawing.Point(623, 207);
             this.btnSalvarPessoa.Name = "btnSalvarPessoa";
-            this.btnSalvarPessoa.Size = new System.Drawing.Size(115, 47);
+            this.btnSalvarPessoa.Size = new System.Drawing.Size(115, 38);
             this.btnSalvarPessoa.TabIndex = 21;
             this.btnSalvarPessoa.Text = "Cadastrar";
             this.btnSalvarPessoa.UseCompatibleTextRendering = true;
             this.btnSalvarPessoa.UseVisualStyleBackColor = false;
+            this.btnSalvarPessoa.Click += new System.EventHandler(this.btnSalvarPessoa_Click);
             // 
             // txtCidade
             // 
             this.txtCidade.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCidade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtCidade.Location = new System.Drawing.Point(493, 172);
+            this.txtCidade.Location = new System.Drawing.Point(477, 172);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(261, 29);
             this.txtCidade.TabIndex = 20;
@@ -202,7 +272,7 @@ namespace ControleBiblioteca {
             this.txtEstado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEstado.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtEstado.Location = new System.Drawing.Point(384, 172);
+            this.txtEstado.Location = new System.Drawing.Point(368, 172);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(99, 29);
             this.txtEstado.TabIndex = 19;
@@ -212,7 +282,7 @@ namespace ControleBiblioteca {
             this.txtBairro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBairro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtBairro.Location = new System.Drawing.Point(493, 116);
+            this.txtBairro.Location = new System.Drawing.Point(477, 116);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(261, 29);
             this.txtBairro.TabIndex = 18;
@@ -222,7 +292,7 @@ namespace ControleBiblioteca {
             this.txtNumero.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNumero.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNumero.Location = new System.Drawing.Point(384, 116);
+            this.txtNumero.Location = new System.Drawing.Point(368, 116);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(99, 29);
             this.txtNumero.TabIndex = 17;
@@ -232,7 +302,7 @@ namespace ControleBiblioteca {
             this.txtLogradouro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLogradouro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtLogradouro.Location = new System.Drawing.Point(384, 60);
+            this.txtLogradouro.Location = new System.Drawing.Point(368, 60);
             this.txtLogradouro.Name = "txtLogradouro";
             this.txtLogradouro.Size = new System.Drawing.Size(370, 29);
             this.txtLogradouro.TabIndex = 16;
@@ -243,7 +313,7 @@ namespace ControleBiblioteca {
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(493, 92);
+            this.label11.Location = new System.Drawing.Point(477, 92);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(56, 21);
             this.label11.TabIndex = 15;
@@ -267,7 +337,7 @@ namespace ControleBiblioteca {
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(384, 148);
+            this.label9.Location = new System.Drawing.Point(368, 148);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 21);
             this.label9.TabIndex = 13;
@@ -279,7 +349,7 @@ namespace ControleBiblioteca {
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(384, 92);
+            this.label8.Location = new System.Drawing.Point(368, 92);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 21);
             this.label8.TabIndex = 12;
@@ -291,7 +361,7 @@ namespace ControleBiblioteca {
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(384, 36);
+            this.label7.Location = new System.Drawing.Point(368, 36);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(99, 21);
             this.label7.TabIndex = 11;
@@ -316,16 +386,6 @@ namespace ControleBiblioteca {
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(160, 29);
             this.txtTelefone.TabIndex = 9;
-            // 
-            // txtDtnasc
-            // 
-            this.txtDtnasc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDtnasc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDtnasc.Location = new System.Drawing.Point(176, 116);
-            this.txtDtnasc.Name = "txtDtnasc";
-            this.txtDtnasc.Size = new System.Drawing.Size(179, 29);
-            this.txtDtnasc.TabIndex = 8;
             // 
             // txtCpf
             // 
@@ -420,36 +480,65 @@ namespace ControleBiblioteca {
             this.label1.Text = "Novo cadastro";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tabPessoasCadastradas
+            // tabLivrosCadastrados
             // 
-            this.tabPessoasCadastradas.Controls.Add(this.dgvPessoas);
-            this.tabPessoasCadastradas.Controls.Add(this.label23);
-            this.tabPessoasCadastradas.Location = new System.Drawing.Point(4, 24);
-            this.tabPessoasCadastradas.Name = "tabPessoasCadastradas";
-            this.tabPessoasCadastradas.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPessoasCadastradas.Size = new System.Drawing.Size(791, 321);
-            this.tabPessoasCadastradas.TabIndex = 5;
-            this.tabPessoasCadastradas.Text = "Pessoas Cadastradas";
-            this.tabPessoasCadastradas.UseVisualStyleBackColor = true;
+            this.tabLivrosCadastrados.Controls.Add(this.btnNovoLivro);
+            this.tabLivrosCadastrados.Controls.Add(this.dataGridView1);
+            this.tabLivrosCadastrados.Controls.Add(this.label24);
+            this.tabLivrosCadastrados.Location = new System.Drawing.Point(4, 24);
+            this.tabLivrosCadastrados.Name = "tabLivrosCadastrados";
+            this.tabLivrosCadastrados.Padding = new System.Windows.Forms.Padding(3);
+            this.tabLivrosCadastrados.Size = new System.Drawing.Size(791, 381);
+            this.tabLivrosCadastrados.TabIndex = 6;
+            this.tabLivrosCadastrados.Text = "Livros Cadastrados";
+            this.tabLivrosCadastrados.UseVisualStyleBackColor = true;
             // 
-            // label23
+            // btnNovoLivro
             // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnNovoLivro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(6, 3);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(210, 30);
-            this.label23.TabIndex = 1;
-            this.label23.Text = "Pessoas Cadastradas";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNovoLivro.BackColor = System.Drawing.Color.Transparent;
+            this.btnNovoLivro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNovoLivro.ForeColor = System.Drawing.Color.Black;
+            this.btnNovoLivro.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnNovoLivro.Location = new System.Drawing.Point(3, 36);
+            this.btnNovoLivro.Name = "btnNovoLivro";
+            this.btnNovoLivro.Size = new System.Drawing.Size(115, 38);
+            this.btnNovoLivro.TabIndex = 31;
+            this.btnNovoLivro.Text = "Novo";
+            this.btnNovoLivro.UseCompatibleTextRendering = true;
+            this.btnNovoLivro.UseVisualStyleBackColor = false;
+            this.btnNovoLivro.Click += new System.EventHandler(this.btnNovoLivro_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 80);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(779, 295);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label24.Location = new System.Drawing.Point(6, 3);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(196, 30);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "Livros Cadastrados";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabLivros
             // 
+            this.tabLivros.Controls.Add(this.txtDataEntrada);
             this.tabLivros.Controls.Add(this.btnCancelarCL);
             this.tabLivros.Controls.Add(this.btnSalvarLivro);
-            this.tabLivros.Controls.Add(this.txtDataEntrada);
             this.tabLivros.Controls.Add(this.label16);
             this.tabLivros.Controls.Add(this.txtCategoria);
             this.tabLivros.Controls.Add(this.label15);
@@ -461,22 +550,33 @@ namespace ControleBiblioteca {
             this.tabLivros.Location = new System.Drawing.Point(4, 24);
             this.tabLivros.Name = "tabLivros";
             this.tabLivros.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLivros.Size = new System.Drawing.Size(791, 321);
+            this.tabLivros.Size = new System.Drawing.Size(791, 381);
             this.tabLivros.TabIndex = 2;
             this.tabLivros.Text = "Cadastro de Livros";
             this.tabLivros.UseVisualStyleBackColor = true;
+            // 
+            // txtDataEntrada
+            // 
+            this.txtDataEntrada.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDataEntrada.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDataEntrada.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDataEntrada.Location = new System.Drawing.Point(390, 112);
+            this.txtDataEntrada.Name = "txtDataEntrada";
+            this.txtDataEntrada.Size = new System.Drawing.Size(347, 29);
+            this.txtDataEntrada.TabIndex = 26;
             // 
             // btnCancelarCL
             // 
             this.btnCancelarCL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelarCL.BackColor = System.Drawing.Color.Red;
+            this.btnCancelarCL.BackColor = System.Drawing.Color.Transparent;
             this.btnCancelarCL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancelarCL.ForeColor = System.Drawing.Color.Black;
             this.btnCancelarCL.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnCancelarCL.Location = new System.Drawing.Point(379, 147);
+            this.btnCancelarCL.Location = new System.Drawing.Point(622, 193);
             this.btnCancelarCL.Name = "btnCancelarCL";
-            this.btnCancelarCL.Size = new System.Drawing.Size(115, 47);
+            this.btnCancelarCL.Size = new System.Drawing.Size(115, 40);
             this.btnCancelarCL.TabIndex = 23;
             this.btnCancelarCL.Text = "Cancelar";
             this.btnCancelarCL.UseCompatibleTextRendering = true;
@@ -486,27 +586,18 @@ namespace ControleBiblioteca {
             // 
             this.btnSalvarLivro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalvarLivro.BackColor = System.Drawing.Color.LightGreen;
+            this.btnSalvarLivro.BackColor = System.Drawing.Color.Transparent;
             this.btnSalvarLivro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSalvarLivro.ForeColor = System.Drawing.Color.Black;
             this.btnSalvarLivro.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSalvarLivro.Location = new System.Drawing.Point(240, 147);
+            this.btnSalvarLivro.Location = new System.Drawing.Point(622, 147);
             this.btnSalvarLivro.Name = "btnSalvarLivro";
-            this.btnSalvarLivro.Size = new System.Drawing.Size(115, 47);
+            this.btnSalvarLivro.Size = new System.Drawing.Size(115, 40);
             this.btnSalvarLivro.TabIndex = 22;
             this.btnSalvarLivro.Text = "Cadastrar";
             this.btnSalvarLivro.UseCompatibleTextRendering = true;
             this.btnSalvarLivro.UseVisualStyleBackColor = false;
-            // 
-            // txtDataEntrada
-            // 
-            this.txtDataEntrada.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDataEntrada.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDataEntrada.Location = new System.Drawing.Point(379, 112);
-            this.txtDataEntrada.Name = "txtDataEntrada";
-            this.txtDataEntrada.Size = new System.Drawing.Size(347, 29);
-            this.txtDataEntrada.TabIndex = 13;
+            this.btnSalvarLivro.Click += new System.EventHandler(this.btnSalvarLivro_Click);
             // 
             // label16
             // 
@@ -514,7 +605,7 @@ namespace ControleBiblioteca {
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(379, 88);
+            this.label16.Location = new System.Drawing.Point(390, 88);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(109, 21);
             this.label16.TabIndex = 12;
@@ -527,7 +618,7 @@ namespace ControleBiblioteca {
             this.txtCategoria.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtCategoria.Location = new System.Drawing.Point(8, 112);
             this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(347, 29);
+            this.txtCategoria.Size = new System.Drawing.Size(366, 29);
             this.txtCategoria.TabIndex = 11;
             // 
             // label15
@@ -547,7 +638,7 @@ namespace ControleBiblioteca {
             this.txtAutor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAutor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtAutor.Location = new System.Drawing.Point(379, 56);
+            this.txtAutor.Location = new System.Drawing.Point(390, 56);
             this.txtAutor.Name = "txtAutor";
             this.txtAutor.Size = new System.Drawing.Size(347, 29);
             this.txtAutor.TabIndex = 9;
@@ -558,7 +649,7 @@ namespace ControleBiblioteca {
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(379, 33);
+            this.label14.Location = new System.Drawing.Point(386, 33);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(53, 21);
             this.label14.TabIndex = 8;
@@ -571,7 +662,7 @@ namespace ControleBiblioteca {
             this.txtDescricaoLivro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtDescricaoLivro.Location = new System.Drawing.Point(8, 56);
             this.txtDescricaoLivro.Name = "txtDescricaoLivro";
-            this.txtDescricaoLivro.Size = new System.Drawing.Size(347, 29);
+            this.txtDescricaoLivro.Size = new System.Drawing.Size(366, 29);
             this.txtDescricaoLivro.TabIndex = 7;
             // 
             // label13
@@ -599,81 +690,135 @@ namespace ControleBiblioteca {
             this.label12.TabIndex = 2;
             this.label12.Text = "Descrição";
             // 
-            // tabLivrosCadastrados
+            // tabAlugueisCadastrados
             // 
-            this.tabLivrosCadastrados.Controls.Add(this.dataGridView1);
-            this.tabLivrosCadastrados.Controls.Add(this.label24);
-            this.tabLivrosCadastrados.Location = new System.Drawing.Point(4, 24);
-            this.tabLivrosCadastrados.Name = "tabLivrosCadastrados";
-            this.tabLivrosCadastrados.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLivrosCadastrados.Size = new System.Drawing.Size(791, 321);
-            this.tabLivrosCadastrados.TabIndex = 6;
-            this.tabLivrosCadastrados.Text = "Livros Cadastrados";
-            this.tabLivrosCadastrados.UseVisualStyleBackColor = true;
+            this.tabAlugueisCadastrados.Controls.Add(this.btnNovoAluguel);
+            this.tabAlugueisCadastrados.Controls.Add(this.label25);
+            this.tabAlugueisCadastrados.Controls.Add(this.dataGridView2);
+            this.tabAlugueisCadastrados.Location = new System.Drawing.Point(4, 24);
+            this.tabAlugueisCadastrados.Name = "tabAlugueisCadastrados";
+            this.tabAlugueisCadastrados.Padding = new System.Windows.Forms.Padding(3);
+            this.tabAlugueisCadastrados.Size = new System.Drawing.Size(791, 381);
+            this.tabAlugueisCadastrados.TabIndex = 4;
+            this.tabAlugueisCadastrados.Text = "Alugueis";
+            this.tabAlugueisCadastrados.UseVisualStyleBackColor = true;
             // 
-            // label24
+            // btnNovoAluguel
             // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnNovoAluguel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label24.Location = new System.Drawing.Point(6, 3);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(196, 30);
-            this.label24.TabIndex = 2;
-            this.label24.Text = "Livros Cadastrados";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNovoAluguel.BackColor = System.Drawing.Color.Transparent;
+            this.btnNovoAluguel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNovoAluguel.ForeColor = System.Drawing.Color.Black;
+            this.btnNovoAluguel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnNovoAluguel.Location = new System.Drawing.Point(3, 36);
+            this.btnNovoAluguel.Name = "btnNovoAluguel";
+            this.btnNovoAluguel.Size = new System.Drawing.Size(115, 38);
+            this.btnNovoAluguel.TabIndex = 31;
+            this.btnNovoAluguel.Text = "Novo";
+            this.btnNovoAluguel.UseCompatibleTextRendering = true;
+            this.btnNovoAluguel.UseVisualStyleBackColor = false;
+            this.btnNovoAluguel.Click += new System.EventHandler(this.btnNovoAluguel_Click);
+            // 
+            // label25
+            // 
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label25.Location = new System.Drawing.Point(8, 3);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(216, 30);
+            this.label25.TabIndex = 4;
+            this.label25.Text = "Registro de Alugueis";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 80);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 25;
+            this.dataGridView2.Size = new System.Drawing.Size(779, 295);
+            this.dataGridView2.TabIndex = 3;
             // 
             // tabAluguel
             // 
+            this.tabAluguel.Controls.Add(this.txtDataSaida);
+            this.tabAluguel.Controls.Add(this.txtDataRetorno);
             this.tabAluguel.Controls.Add(this.btnSalvarAluguel);
             this.tabAluguel.Controls.Add(this.btnCancelarA);
             this.tabAluguel.Controls.Add(this.label22);
             this.tabAluguel.Controls.Add(this.label21);
-            this.tabAluguel.Controls.Add(this.maskedTextBox2);
-            this.tabAluguel.Controls.Add(this.maskedTextBox1);
             this.tabAluguel.Controls.Add(this.cmbLivroAlugado);
             this.tabAluguel.Controls.Add(this.label20);
             this.tabAluguel.Controls.Add(this.cmbPessoa);
             this.tabAluguel.Controls.Add(this.label19);
-            this.tabAluguel.Controls.Add(this.textBox1);
+            this.tabAluguel.Controls.Add(this.txtValor);
             this.tabAluguel.Controls.Add(this.label18);
             this.tabAluguel.Controls.Add(this.label17);
             this.tabAluguel.Location = new System.Drawing.Point(4, 24);
             this.tabAluguel.Name = "tabAluguel";
             this.tabAluguel.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAluguel.Size = new System.Drawing.Size(791, 321);
+            this.tabAluguel.Size = new System.Drawing.Size(791, 381);
             this.tabAluguel.TabIndex = 3;
-            this.tabAluguel.Text = "Alugueis";
+            this.tabAluguel.Text = "Registrar Aluguel";
             this.tabAluguel.UseVisualStyleBackColor = true;
+            // 
+            // txtDataSaida
+            // 
+            this.txtDataSaida.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDataSaida.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDataSaida.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDataSaida.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDataSaida.Location = new System.Drawing.Point(13, 113);
+            this.txtDataSaida.Name = "txtDataSaida";
+            this.txtDataSaida.Size = new System.Drawing.Size(168, 29);
+            this.txtDataSaida.TabIndex = 31;
+            // 
+            // txtDataRetorno
+            // 
+            this.txtDataRetorno.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDataRetorno.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDataRetorno.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDataRetorno.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDataRetorno.Location = new System.Drawing.Point(187, 113);
+            this.txtDataRetorno.Name = "txtDataRetorno";
+            this.txtDataRetorno.Size = new System.Drawing.Size(168, 29);
+            this.txtDataRetorno.TabIndex = 30;
             // 
             // btnSalvarAluguel
             // 
             this.btnSalvarAluguel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalvarAluguel.BackColor = System.Drawing.Color.LightGreen;
+            this.btnSalvarAluguel.BackColor = System.Drawing.Color.Transparent;
             this.btnSalvarAluguel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSalvarAluguel.ForeColor = System.Drawing.Color.Black;
             this.btnSalvarAluguel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSalvarAluguel.Location = new System.Drawing.Point(245, 148);
+            this.btnSalvarAluguel.Location = new System.Drawing.Point(610, 148);
             this.btnSalvarAluguel.Name = "btnSalvarAluguel";
-            this.btnSalvarAluguel.Size = new System.Drawing.Size(115, 47);
+            this.btnSalvarAluguel.Size = new System.Drawing.Size(115, 38);
             this.btnSalvarAluguel.TabIndex = 29;
             this.btnSalvarAluguel.Text = "Cadastrar";
             this.btnSalvarAluguel.UseCompatibleTextRendering = true;
             this.btnSalvarAluguel.UseVisualStyleBackColor = false;
+            this.btnSalvarAluguel.Click += new System.EventHandler(this.btnSalvarAluguel_Click);
             // 
             // btnCancelarA
             // 
             this.btnCancelarA.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelarA.BackColor = System.Drawing.Color.Red;
+            this.btnCancelarA.BackColor = System.Drawing.Color.Transparent;
             this.btnCancelarA.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancelarA.ForeColor = System.Drawing.Color.Black;
             this.btnCancelarA.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnCancelarA.Location = new System.Drawing.Point(383, 148);
+            this.btnCancelarA.Location = new System.Drawing.Point(610, 192);
             this.btnCancelarA.Name = "btnCancelarA";
-            this.btnCancelarA.Size = new System.Drawing.Size(115, 47);
+            this.btnCancelarA.Size = new System.Drawing.Size(115, 38);
             this.btnCancelarA.TabIndex = 28;
             this.btnCancelarA.Text = "Cancelar";
             this.btnCancelarA.UseCompatibleTextRendering = true;
@@ -702,30 +847,6 @@ namespace ControleBiblioteca {
             this.label21.Size = new System.Drawing.Size(107, 21);
             this.label21.TabIndex = 26;
             this.label21.Text = "Data retorno";
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox2.Location = new System.Drawing.Point(187, 113);
-            this.maskedTextBox2.Mask = "00/00/0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(173, 29);
-            this.maskedTextBox2.TabIndex = 25;
-            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox1.Location = new System.Drawing.Point(8, 113);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(173, 29);
-            this.maskedTextBox1.TabIndex = 24;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             // 
             // cmbLivroAlugado
             // 
@@ -773,15 +894,15 @@ namespace ControleBiblioteca {
             this.label19.TabIndex = 9;
             this.label19.Text = "Pessoa";
             // 
-            // textBox1
+            // txtValor
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtValor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(383, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(342, 29);
-            this.textBox1.TabIndex = 8;
+            this.txtValor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtValor.Location = new System.Drawing.Point(383, 113);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(342, 29);
+            this.txtValor.TabIndex = 8;
             // 
             // label18
             // 
@@ -808,88 +929,30 @@ namespace ControleBiblioteca {
             this.label17.Text = "Cadastrar Aluguel";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tabRanking
-            // 
-            this.tabRanking.Controls.Add(this.label25);
-            this.tabRanking.Controls.Add(this.dataGridView2);
-            this.tabRanking.Location = new System.Drawing.Point(4, 24);
-            this.tabRanking.Name = "tabRanking";
-            this.tabRanking.Padding = new System.Windows.Forms.Padding(3);
-            this.tabRanking.Size = new System.Drawing.Size(791, 321);
-            this.tabRanking.TabIndex = 4;
-            this.tabRanking.Text = "Livros mais alugados";
-            this.tabRanking.UseVisualStyleBackColor = true;
-            // 
-            // dgvPessoas
-            // 
-            this.dgvPessoas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvPessoas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPessoas.Location = new System.Drawing.Point(6, 36);
-            this.dgvPessoas.Name = "dgvPessoas";
-            this.dgvPessoas.RowTemplate.Height = 25;
-            this.dgvPessoas.Size = new System.Drawing.Size(779, 271);
-            this.dgvPessoas.TabIndex = 2;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 36);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(779, 271);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(6, 36);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(779, 271);
-            this.dataGridView2.TabIndex = 3;
-            // 
-            // label25
-            // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label25.Location = new System.Drawing.Point(8, 3);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(339, 30);
-            this.label25.TabIndex = 4;
-            this.label25.Text = "Ranking de Livros mais Alugados";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Form1
+            // FormControle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabControl1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormControle";
+            this.Text = "Controle de Alugueis";
             this.tabControl1.ResumeLayout(false);
-            this.tabPessoas.ResumeLayout(false);
-            this.tabPessoas.PerformLayout();
             this.tabPessoasCadastradas.ResumeLayout(false);
             this.tabPessoasCadastradas.PerformLayout();
-            this.tabLivros.ResumeLayout(false);
-            this.tabLivros.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPessoas)).EndInit();
+            this.tabPessoas.ResumeLayout(false);
+            this.tabPessoas.PerformLayout();
             this.tabLivrosCadastrados.ResumeLayout(false);
             this.tabLivrosCadastrados.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabLivros.ResumeLayout(false);
+            this.tabLivros.PerformLayout();
+            this.tabAlugueisCadastrados.ResumeLayout(false);
+            this.tabAlugueisCadastrados.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabAluguel.ResumeLayout(false);
             this.tabAluguel.PerformLayout();
-            this.tabRanking.ResumeLayout(false);
-            this.tabRanking.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPessoas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -901,7 +964,7 @@ namespace ControleBiblioteca {
         private System.Windows.Forms.TabPage tabPessoas;
         private System.Windows.Forms.TabPage tabLivros;
         private System.Windows.Forms.TabPage tabAluguel;
-        private System.Windows.Forms.TabPage tabRanking;
+        private System.Windows.Forms.TabPage tabAlugueisCadastrados;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -911,7 +974,6 @@ namespace ControleBiblioteca {
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtTelefone;
-        private System.Windows.Forms.TextBox txtDtnasc;
         private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtNumero;
@@ -921,7 +983,6 @@ namespace ControleBiblioteca {
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtDataEntrada;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.Label label15;
@@ -930,13 +991,11 @@ namespace ControleBiblioteca {
         private System.Windows.Forms.TextBox txtDescricaoLivro;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.TextBox txtEstado;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.ComboBox cmbLivroAlugado;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.ComboBox cmbPessoa;
@@ -957,6 +1016,13 @@ namespace ControleBiblioteca {
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button btnNovoPessoa;
+        private System.Windows.Forms.Button btnNovoLivro;
+        private System.Windows.Forms.Button btnNovoAluguel;
+        private System.Windows.Forms.DateTimePicker txtDataNasc;
+        private System.Windows.Forms.DateTimePicker txtDataEntrada;
+        private System.Windows.Forms.DateTimePicker txtDataSaida;
+        private System.Windows.Forms.DateTimePicker txtDataRetorno;
     }
 }
 
