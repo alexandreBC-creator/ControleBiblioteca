@@ -13,6 +13,5 @@ namespace ControleBiblioteca {
         public Form1() {
             InitializeComponent();
         }
-
     }
 }
