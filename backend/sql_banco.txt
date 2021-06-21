@@ -1,0 +1,70 @@
+--------------------------CAD_PESSOAS-----------------------------------------
+CREATE TABLE ControleBiblioteca.cad_pessoas (
+	idpessoa INT auto_increment NOT NULL,
+	nome varchar(100) NULL,
+	idendereco INT NULL,
+	idcontato INT NULL,
+	cpf varchar(15) NULL,
+	datanasc DATE NULL,
+	CONSTRAINT cad_pessoas_PK PRIMARY KEY (idpessoa)
+)
+-------------------------------------------------------------------------------
+----------------------CAD_ENDERECOS--------------------------------------------
+CREATE TABLE ControleBiblioteca.cad_enderecos (
+	idendereco INT auto_increment NOT NULL,
+	logradouro VARCHAR(50) NULL,
+	bairro varchar(50) NULL,
+	numero varchar(20) NULL,
+	estado varchar(50) NULL,
+	cidade varchar(50) NULL,
+	cep varchar(10) NULL,
+	idpessoa INT NULL,
+	CONSTRAINT cad_enderecos_PK PRIMARY KEY (idendereco),
+	CONSTRAINT cad_enderecos_FK FOREIGN KEY (idpessoa) REFERENCES ControleBiblioteca.cad_pessoas(idpessoa)
+)
+-------------------------------------------------------------------------------
+----------------------CAD_CONTATOS---------------------------------------------
+CREATE TABLE ControleBiblioteca.cad_contatos (
+	idcontato INT auto_increment NOT NULL,
+	telefone varchar(15) NULL,
+	email varchar(30) NULL,
+	idpessoa INT NULL,
+	principal BOOL NULL,
+	CONSTRAINT cad_contatos_PK PRIMARY KEY (idcontato),
+	CONSTRAINT cad_contatos_FK FOREIGN KEY (idpessoa) REFERENCES ControleBiblioteca.cad_pessoas(idpessoa)
+)
+-------------------------------------------------------------------------------
+------------------------ALTER TABLE--------------------------------------------
+ALTER TABLE ControleBiblioteca.cad_pessoas ADD CONSTRAINT cad_pessoas_FK FOREIGN KEY (idendereco) REFERENCES ControleBiblioteca.cad_enderecos(idendereco);
+-------------------------------------------------------------------------------
+------------------------CAD_LIVROS---------------------------------------------
+CREATE TABLE ControleBiblioteca.cad_livros (
+	idlivro INT auto_increment NOT NULL,
+	descricao varchar(50) NULL,
+	categoria varchar(50) NULL,
+	autor varchar(50) NULL,
+	dataentrada DATE NULL,
+	CONSTRAINT cad_livros_PK PRIMARY KEY (idlivro)
+)
+-------------------------------------------------------------------------------
+------------------------CAD_ALUGUEIS-------------------------------------------
+CREATE TABLE ControleBiblioteca.cad_alugueis (
+	idaluguel INT auto_increment NOT NULL,
+	idlivro int NULL,
+	idpessoa INT NULL,
+	datasaida DATE NULL,
+	dataentrega DATE NULL,
+	valor DOUBLE NULL,
+	CONSTRAINT cad_alugueis_PK PRIMARY KEY (idaluguel),
+	CONSTRAINT cad_alugueis_FK FOREIGN KEY (idpessoa) REFERENCES ControleBiblioteca.cad_pessoas(idpessoa),
+	CONSTRAINT cad_alugueis_FK_1 FOREIGN KEY (idlivro) REFERENCES ControleBiblioteca.cad_livros(idlivro)
+)
+-------------------------------------------------------------------------------
+------------------------CAD_RANKING--------------------------------------------
+CREATE TABLE ControleBiblioteca.cad_ranking (
+	idranking int auto_increment NOT NULL,
+	idlivro INT NULL,
+	`data` DATE NULL,
+	CONSTRAINT cad_ranking_PK PRIMARY KEY (idranking),
+	CONSTRAINT cad_ranking_FK FOREIGN KEY (idlivro) REFERENCES ControleBiblioteca.cad_livros(idlivro)
+)
