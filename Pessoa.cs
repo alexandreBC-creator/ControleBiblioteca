@@ -10,7 +10,7 @@ using MySql.Data;
 using MySql.Data.MySqlClient;
 
 namespace ControleBiblioteca {
-    class FormPessoas {
+    class Pessoa {
         public int idpessoa { get; set; }
         public string nome { get; set; }
         public string cpf { get; set; }
@@ -24,11 +24,11 @@ namespace ControleBiblioteca {
         public string estado { get; set; }
         public string cidade { get; set; }
 
-        public FormPessoas() {
+        public Pessoa() {
 
         }
 
-        public FormPessoas(string nome, string cpf, DateTime dataNasc, string telefone, string email, string logradouro, string numero, string bairro, string estado, string cidade) {
+        public Pessoa(string nome, string cpf, DateTime dataNasc, string telefone, string email, string logradouro, string numero, string bairro, string estado, string cidade) {
             this.nome = nome;
             this.cpf = cpf;
             this.dataNasc = dataNasc;
@@ -42,7 +42,7 @@ namespace ControleBiblioteca {
 
         }
 
-        public FormPessoas(string nome, string cpf, DateTime dataNasc, string telefone, string email, string logradouro, string numero, string bairro, string estado, string cidade, int idpessoa, int idendereco) {
+        public Pessoa(string nome, string cpf, DateTime dataNasc, string telefone, string email, string logradouro, string numero, string bairro, string estado, string cidade, int idpessoa, int idendereco) {
             this.nome = nome;
             this.cpf = cpf;
             this.dataNasc = dataNasc;
@@ -59,7 +59,7 @@ namespace ControleBiblioteca {
         }
 
         public string insert() {
-            FormConexao c = new FormConexao();
+            Conexao c = new Conexao();
             try {
                 c.abreConexao();
 
@@ -91,7 +91,7 @@ namespace ControleBiblioteca {
 
         public DataTable select() {
             DataTable tabela = new DataTable();
-            FormConexao conexao = new FormConexao();
+            Conexao conexao = new Conexao();
             try {
                 conexao.abreConexao();
 
@@ -119,7 +119,7 @@ namespace ControleBiblioteca {
 
         public string update() {
 
-            FormConexao c = new FormConexao();
+            Conexao c = new Conexao();
             try {
                 c.abreConexao();
                 MySqlCommand cmd = new MySqlCommand(@"", c.conexaoBD());
@@ -151,7 +151,7 @@ namespace ControleBiblioteca {
 
         public string delete(int codigo) {
 
-            FormConexao c = new FormConexao();
+            Conexao c = new Conexao();
             try {
                 c.abreConexao();
                 MySqlCommand cmd = new MySqlCommand(@"", c.conexaoBD());

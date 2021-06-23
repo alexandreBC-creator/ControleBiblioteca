@@ -3,7 +3,7 @@ using MySql.Data.MySqlClient;
 
 namespace ControleBiblioteca {
 
-    class FormConexao {
+    class Conexao {
         string strConexao = @"SERVER=localhost; DATABASE=bdfinanceiro; UID=root; PASSWORD=123;";
 
         private MySqlConnection con;
