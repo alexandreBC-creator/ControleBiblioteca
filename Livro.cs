@@ -8,24 +8,24 @@ using MySql.Data;
 using MySql.Data.MySqlClient;
 
 namespace ControleBiblioteca {
-    class FormLivros {
+    class Livro {
         public int idlivro { get; set; }
         public string descricao { get; set; }
         public string categoria { get; set; }
         public DateTime dataentrada { get; set; }
         public string autor { get; set; }
 
-        public FormLivros() {
+        public Livro() {
 
         }
 
-        public FormLivros(string descricao, string autor, DateTime dataentrada, string categoria) {
+        public Livro(string descricao, string autor, DateTime dataentrada, string categoria) {
             this.descricao = descricao;
             this.autor = autor;
             this.dataentrada = dataentrada;
             this.categoria = categoria;
         }
-        public FormLivros(string descricao, string autor, DateTime dataentrada, string categoria, int idlivro) {
+        public Livro(string descricao, string autor, DateTime dataentrada, string categoria, int idlivro) {
             this.descricao = descricao;
             this.autor = autor;
             this.dataentrada = dataentrada;
@@ -35,7 +35,7 @@ namespace ControleBiblioteca {
 
 
         public string insert() {
-            FormConexao c = new FormConexao();
+            Conexao c = new Conexao();
             try {
                 c.abreConexao();
 
@@ -59,7 +59,7 @@ namespace ControleBiblioteca {
 
         public DataTable select() {
             DataTable tabela = new DataTable();
-            FormConexao conexao = new FormConexao();
+            Conexao conexao = new Conexao();
             try {
                 conexao.abreConexao();
 
@@ -87,7 +87,7 @@ namespace ControleBiblioteca {
 
         public string update() {
 
-            FormConexao c = new FormConexao();
+            Conexao c = new Conexao();
             try {
                 c.abreConexao();
                 MySqlCommand cmd = new MySqlCommand(@"", c.conexaoBD());
@@ -111,7 +111,7 @@ namespace ControleBiblioteca {
 
         public string delete(int codigo) {
 
-            FormConexao c = new FormConexao();
+            Conexao c = new Conexao();
             try {
                 c.abreConexao();
                 MySqlCommand cmd = new MySqlCommand(@"", c.conexaoBD());

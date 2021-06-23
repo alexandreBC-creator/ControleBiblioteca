@@ -16,4 +16,15 @@ C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ref\
 C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.pdb
 C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.genruntimeconfig.cache
 C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.Properties.Resources.resources
-C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.FormControle.resources
+C:\Users\rodri\Documents\GitHub\ControleBiblioteca\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Users\rodri\Documents\GitHub\ControleBiblioteca\bin\Debug\net5.0-windows\Google.Protobuf.dll
+C:\Users\rodri\Documents\GitHub\ControleBiblioteca\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+C:\Users\rodri\Documents\GitHub\ControleBiblioteca\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\rodri\Documents\GitHub\ControleBiblioteca\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+C:\Users\rodri\Documents\GitHub\ControleBiblioteca\bin\Debug\net5.0-windows\MySql.Data.dll
+C:\Users\rodri\Documents\GitHub\ControleBiblioteca\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+C:\Users\rodri\Documents\GitHub\ControleBiblioteca\bin\Debug\net5.0-windows\Zstandard.Net.dll
+C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.csproj.CopyComplete
+C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.FormAluguel.resources
+C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.FormLivro.resources
+C:\Users\rodri\Documents\GitHub\ControleBiblioteca\obj\Debug\net5.0-windows\ControleBiblioteca.FormPessoa.resources
