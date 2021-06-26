@@ -40,12 +40,15 @@ namespace ControleBiblioteca {
                 c.abreConexao();
 
                 MySqlCommand cmd = new MySqlCommand(
-                    @"", c.conexaoBD());
+                    "INSERT INTO ControleBiblioteca.cad_livros"
+                    + "(descricao, categoria, autor, dataentrada, ativo)"
+                    + "VALUES(@descricao, @categoria, @autor, @dataentrada, true)"
+                , c.conexaoBD());
 
-                cmd.Parameters.AddWithValue("@idpessoa", this.descricao);
+                cmd.Parameters.AddWithValue("@descricao", this.descricao);
+                cmd.Parameters.AddWithValue("@categoria", this.categoria);
                 cmd.Parameters.AddWithValue("@autor", this.autor);
                 cmd.Parameters.AddWithValue("@dataentrada", this.dataentrada);
-                cmd.Parameters.AddWithValue("@idendereco", this.categoria);
                 cmd.ExecuteNonQuery();
                 return "Ok";
             }
@@ -90,12 +93,12 @@ namespace ControleBiblioteca {
             Conexao c = new Conexao();
             try {
                 c.abreConexao();
-                MySqlCommand cmd = new MySqlCommand(@"", c.conexaoBD());
-                cmd.Parameters.AddWithValue("@idpessoa", this.descricao);
+                MySqlCommand cmd = new MySqlCommand("UPDATE ControleBiblioteca.cad_livros SET descricao=@descricao, categoria=@categoria, autor=@autor, dataentrada=@dataentrada, ativo=1 WHERE idlivro=@idlivro", c.conexaoBD());
+                cmd.Parameters.AddWithValue("@descricao", this.descricao);
+                cmd.Parameters.AddWithValue("@categoria", this.categoria);
                 cmd.Parameters.AddWithValue("@autor", this.autor);
                 cmd.Parameters.AddWithValue("@dataentrada", this.dataentrada);
-                cmd.Parameters.AddWithValue("@idendereco", this.categoria);
-                cmd.Parameters.AddWithValue("@idaluguel", this.idlivro);
+                cmd.Parameters.AddWithValue("@idlivro", this.idlivro);
                 cmd.ExecuteNonQuery();
                 return "Movimentação atualizada com sucesso!";
             }
@@ -114,9 +117,13 @@ namespace ControleBiblioteca {
             Conexao c = new Conexao();
             try {
                 c.abreConexao();
-                MySqlCommand cmd = new MySqlCommand(@"", c.conexaoBD());
-                cmd.Parameters.AddWithValue("@idaluguel", idlivro);
+                c.abreConexao();
+                MySqlCommand cmd = new MySqlCommand("UPDATE ControleBiblioteca.cad_livros SET ativo=false "
+                    + " WHERE idlivro= " + codigo
+                 , c.conexaoBD());
+
                 cmd.ExecuteNonQuery();
+
                 return "Movimentação excluida com sucesso!";
 
             }

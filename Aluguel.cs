@@ -45,13 +45,16 @@ namespace ControleBiblioteca {
                 c.abreConexao();
 
                 MySqlCommand cmd = new MySqlCommand(
-                    @"", c.conexaoBD());
+                    "INSERT INTO ControleBiblioteca.cad_alugueis"
+                    + "(idlivro, idpessoa, datasaida, dataentrega, valor)"
+                    + "  VALUES(@idlivro, @idpessoa, @datasaida, @dataretorno, @valor)", c.conexaoBD());
 
+                cmd.Parameters.AddWithValue("@idlivro", this.idlivro);
                 cmd.Parameters.AddWithValue("@idpessoa", this.idpessoa);
-                cmd.Parameters.AddWithValue("@idendereco", this.idendereco);
                 cmd.Parameters.AddWithValue("@datasaida", this.datasaida);
                 cmd.Parameters.AddWithValue("@dataretorno", this.dataretorno);
                 cmd.Parameters.AddWithValue("@valor", this.valor);
+      
                 cmd.ExecuteNonQuery();
                 return "Ok";
             }
